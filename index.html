@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ALOVE Koffi Israël – Full Stack & Mobile Developer based in Lomé, Togo." />
+  <meta property="og:title" content="ALOVE Koffi Israël – Developer Portfolio" />
+  <meta property="og:description" content="Full Stack & Mobile Developer based in Lomé, Togo." />
+  <title>ALOVE Koffi Israël – Developer</title>
+  <!--
+    FONTS (3 faces, 3 jobs) :
+    - Fraunces   → titres / nom hero. Serif costaud, donne du caractère.
+    - Sora       → body text & UI. Géométrique, lisible au petit.
+    - Space Mono → labels techniques SEULEMENT (index nav, badges, tags stack).
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV — logo · liens index · bouton CV · toggle EN|FR · burger
+  ============================================================ -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">K.I<span class="accent">.</span></span>
+
+      <ul class="nav-links">
+        <li><a href="#about"      data-i18n="nav_about">01 — About</a></li>
+        <li><a href="#skills"     data-i18n="nav_skills">02 — Skills</a></li>
+        <li><a href="#projects"   data-i18n="nav_projects">03 — Projects</a></li>
+        <li><a href="#experience" data-i18n="nav_exp">04 — Experience</a></li>
+        <li><a href="#internship" data-i18n="nav_internship">05 — Internship</a></li>
+        <li><a href="#contact"    data-i18n="nav_contact">06 — Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- CV : pointe vers src/cv.pdf — glisse ton PDF ici -->
+        <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf"
+           class="btn-cv mono" id="cvBtn" title="Download CV">
+          <span class="cv-icon">↓</span>
+          <span data-i18n="cv_btn">CV</span>
+        </a>
+        <!-- Toggle EN | FR — JS bascule la classe .fr pour le CSS -->
+        <button class="lang-toggle mono" id="langToggle" aria-label="Switch language">
+          <span class="lt-en">EN</span>
+          <span class="lt-sep"> | </span>
+          <span class="lt-fr">FR</span>
+        </button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about"      data-i18n="nav_about">01 — About</a>
+        <a href="#skills"     data-i18n="nav_skills">02 — Skills</a>
+        <a href="#projects"   data-i18n="nav_projects">03 — Projects</a>
+        <a href="#experience" data-i18n="nav_exp">04 — Experience</a>
+        <a href="#internship" data-i18n="nav_internship">05 — Internship</a>
+        <a href="#contact"    data-i18n="nav_contact">06 — Contact</a>
+      <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="mono" data-i18n="cv_btn_mobile">↓ Download CV</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — SVG path organique en fond + nom typé via JS
+  ============================================================ -->
+  <section id="hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>  
+    <svg class="hero-line" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-50,420 Q250,260 550,360 T1250,220" />
+    </svg>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow mono" data-i18n="hero_eyebrow">Folio — Index 01 / Lomé, TG</p>
+
+      <h1 class="hero-name">
+        <span id="typed-name"></span><span class="cursor">█</span>
+      </h1>
+
+      <p class="hero-title" data-i18n="hero_title">Full Stack &amp; Mobile Developer</p>
+
+      <p class="hero-sub" data-i18n="hero_sub">
+        I build web and mobile products — Flutter apps, Node.js APIs, React interfaces —
+        with clean architecture and an eye for the details that make software feel right.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" data-i18n="hero_cta1">View my work</a>
+        <a href="https://github.com/resval696" target="_blank" rel="noopener" class="btn-ghost">GitHub ↗</a>
+        <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="btn-ghost mono" data-i18n="hero_cta_cv">↓ Download CV</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="5">5+</span>
+          <span class="stat-label" data-i18n="stat_projects">Projects shipped</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">3</span>
+          <span class="stat-label" data-i18n="stat_live">Live deployments</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="2">2+</span>
+          <span class="stat-label" data-i18n="stat_years">Years learning</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint mono" data-i18n="scroll_hint">scroll ↓</div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+       Gauche : bio + timeline académique + boutons
+       Droite : spec-sheet card (infos clés + certif + statut)
+  ============================================================ -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-eye mono" data-i18n="nav_about">01 — About</p>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <h2 data-i18n="about_h2">Code with purpose,<br /><span class="accent">ship with care.</span></h2>
+
+          <p data-i18n="about_p1">
+            I'm Koffi Israël ALOVE , semester 4
+            Application Development student at ESIG Global Success, Lomé. I started with Java
+            and C fundamentals, progressed through web (HTML/CSS/PHP/JS), then specialised in
+            mobile development with Flutter — now I build full-stack products across the entire stack.
+          </p>
+          <p data-i18n="about_p2">
+            My approach: understand the problem first, architect a clean solution, then build it.
+            I care about the details — from database schema design to pixel-level UI.
+          </p>
+
+          <!--
+            TIMELINE académique — faits concis, pas de jargon SAE.
+            Sert à montrer la progression sans surcharger le texte.
+          -->
+          <div class="timeline">
+            <div class="tl-item">
+              <span class="tl-year mono accent">2024 →</span>
+              <span class="tl-label" data-i18n="tl_esig">Licence Dev. Applications — ESIG Global Success</span>
+            </div>
+            <div class="tl-item">
+              <span class="tl-year mono accent">2024</span>
+              <span class="tl-label" data-i18n="tl_bac">Baccalauréat — Lycée Lomé-cité</span>
+            </div>
+            <div class="tl-item">
+              <span class="tl-year mono accent">2023</span>
+              <span class="tl-label" data-i18n="tl_probat">PROBAT</span>
+            </div>
+            <div class="tl-item">
+              <span class="tl-year mono accent">2021</span>
+              <span class="tl-label" data-i18n="tl_bepc">BEPC</span>
+            </div>
+          </div>
+
+          <div class="about-btns">
+            <a href="https://www.linkedin.com/in/koffi-isra%C3%ABl/"
+               target="_blank" rel="noopener" class="btn-outline" data-i18n="about_portfolio">LinkedIn</a>
+            <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf"
+               class="btn-outline btn-cv-about mono" data-i18n="cv_btn_about">↓ Download CV</a>
+          </div>
+        </div>
+
+        <!-- Spec-sheet card — chaque row = une info clé -->
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="about-info-row">
+              <span class="mono accent" data-i18n="card_role_label">role</span>
+              <span data-i18n="card_role_value">Dev Intern @ Future Interns</span>
+            </div>
+            <div class="about-info-row">
+              <span class="mono accent" data-i18n="card_school_label">school</span>
+              <span>ESIG Global Success</span>
+            </div>
+            <div class="about-info-row">
+              <span class="mono accent" data-i18n="card_degree_label">degree</span>
+              <span data-i18n="card_degree_value">Licence — Dev. d'Applications</span>
+            </div>
+            <div class="about-info-row">
+              <span class="mono accent" data-i18n="card_location_label">location</span>
+              <span>Lomé, Togo 🇹🇬</span>
+            </div>
+            
+            <!-- Certif CISCO ajouté ici — info concrète qui compte pour un recruteur -->
+            <div class="about-info-row">
+              <span class="mono accent" data-i18n="card_cert_label">cert</span>
+              <span data-i18n="card_cert_value">CISCO — IT Hardware Essentials</span>
+            </div>
+            <div class="about-info-row">
+              <span class="mono accent" data-i18n="card_status_label">status</span>
+              <span class="status-badge" data-i18n="card_status_value">Available for work</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+       Ajouts vs version précédente :
+       - Java + C ajoutés dans "Languages"
+       - MySQL explicite dans Databases
+       - Figma gardé dans Other (utilisé sur GymNova)
+       - C ajouté dans Languages
+  ============================================================ -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-eye mono" data-i18n="nav_skills">02 — Skills</p>
+      <h2 data-i18n="skills_h2">What I work with</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono" data-i18n="sk_mobile">Mobile</h3>
+          <div class="skill-tags">
+            <span class="tag">Flutter</span><span class="tag">Dart</span>
+            <span class="tag">Firebase</span><span class="tag">Android Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono" data-i18n="sk_languages">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span><span class="tag">Java</span>
+            <span class="tag">C</span><span class="tag">PHP</span><span class="tag">Dart</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono" data-i18n="sk_frontend">Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">React</span><span class="tag">HTML/CSS</span>
+            <span class="tag">Chart.js</span><span class="tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono" data-i18n="sk_backend">Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span><span class="tag">Express</span>
+            <span class="tag">PHP</span><span class="tag">Prisma</span><span class="tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono" data-i18n="sk_db">Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span><span class="tag">SQLite</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono" data-i18n="sk_devops">DevOps &amp; Systems</h3>
+          <div class="skill-tags">
+            <span class="tag">Git / GitHub</span><span class="tag">Linux</span>
+            <span class="tag">Docker</span><span class="tag">OpenLDAP</span><span class="tag">Samba</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono" data-i18n="sk_concepts">Concepts</h3>
+          <div class="skill-tags">
+            <span class="tag">MVC</span><span class="tag">Merise / UML</span>
+            <span class="tag">MikroTik</span><span class="tag">OSI/TCP-IP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+       Dinease enrichi avec les vrais écrans (Accueil → Budget → Résultats → Détail).
+       GymNova enrichi avec rôle front-end + Figma.
+  ============================================================ -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-eye mono" data-i18n="nav_projects">03 — Projects</p>
+      <h2 data-i18n="proj_h2">Selected work</h2>
+
+      <div class="projects-grid">
+
+        <!-- Dinease — featured (full width) car c'est le plus complet -->
+        <div class="project-card featured reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_mobile">Mobile App</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>Dinease</h3>
+          <p data-i18n="proj_dinease">
+            Restaurant discovery app for Lomé — users filter by budget and proximity.
+            4-screen flow: Home → Budget → Results → Restaurant detail.
+            Built with Flutter/Dart, Firebase for data, Android Studio + VS Code.
+          </p>
+          <div class="project-tags mono">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Android Studio</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://github.com/resval696" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- GymNova -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_landing">Landing Page</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>GymNova</h3>
+          <p data-i18n="proj_gym">
+            Gym management web app — front-end role. Designed in Figma first,
+            then built with HTML/CSS/JS. Responsive layout, smooth scroll, clean UI.
+          </p>
+          <div class="project-tags mono">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://resval696.github.io/gym-nova/" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
+            <a href="https://github.com/resval696/gym-nova" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- Smart Budget Planner -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_web">Web App</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>Smart Budget Planner</h3>
+          <p data-i18n="proj_budget">Personal finance tracker using the 50/30/20 rule. Chart.js visualizations, localStorage persistence, fintech UI.</p>
+          <div class="project-tags mono">
+            <span>JavaScript</span><span>Chart.js</span><span>CSS</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://smart-budgetplanner.netlify.app" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
+            <a href="https://github.com/resval696" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- EcoWeather -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_web">Web App</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>EcoWeather</h3>
+          <p data-i18n="proj_weather">Weather app with geolocation, OpenWeatherMap API, and dynamic CSS themes that shift with conditions.</p>
+          <div class="project-tags mono">
+            <span>JavaScript</span><span>OpenWeatherMap API</span><span>CSS</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://eco-wheater.netlify.app" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
+            <a href="https://github.com/resval696" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- AutoÉcole Online -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono">Full Stack</span>
+            <span class="project-status wip mono" data-i18n="proj_wip">In progress</span>
+          </div>
+          <h3>AutoÉcole Online</h3>
+          <p data-i18n="proj_ecole">Online driving school — React frontend, Express/MongoDB backend, JWT auth, quiz engine, booking system, admin panel.</p>
+          <div class="project-tags mono">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://github.com/resval696" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     EXPERIENCE PROFESSIONNELLE
+     Expériences, certifications, bénévolat — tout ce qui
+     compte professionnellement mais n'est pas un projet livré.
+============================================================ -->
+<section id="experience">
+  <div class="section-inner">
+    <p class="section-eye mono" data-i18n="nav_exp">04 — Experience</p>
+    <h2 data-i18n="exp_h2">Professional <span class="accent">Experience</span></h2>
+
+    <div class="exp-list">
+
+      <!-- Future Interns -->
+      <div class="exp-card reveal">
+        <div class="exp-left">
+          <span class="exp-date mono" data-i18n="exp_fi_date">29 Jun-2026 - 29 Jul-2026</span>
+        </div>
+        <div class="exp-right">
+          <div class="exp-header">
+            <h3 data-i18n="exp_fi_title">Full Stack Web Developer Intern</h3>
+            <span class="exp-company accent" data-i18n="exp_fi_company">Future Interns</span>
+            <span class="exp-type mono" data-i18n="exp_fi_type">Remote · Internship</span>
+          </div>
+          <p data-i18n="exp_fi_desc">
+            Self-directed internship building and shipping real full-stack web projects.
+            Developing a personal portfolio, a client lead management CRM, and a local business website.
+            Working with HTML/CSS/JS, React, Node.js, MongoDB and modern deployment pipelines.
+          </p>
+          <div class="exp-tags mono">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+            <span>HTML/CSS/JS</span><span>Netlify</span><span>GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECOPS Week -->
+      <div class="exp-card reveal">
+        <div class="exp-left">
+          <span class="exp-date mono" data-i18n="exp_sec_date">Fev-2026</span>
+        </div>
+        <div class="exp-right">
+          <div class="exp-header">
+            <h3 data-i18n="exp_sec_title">SECOPS Professionalization Project</h3>
+            <span class="exp-company accent">ESIG Global Success</span>
+            <span class="exp-type mono" data-i18n="exp_sec_type">Academic · Group Lead</span>
+          </div>
+          <p data-i18n="exp_sec_desc">
+            Led a team of 6 on a systems administration project implementing OpenLDAP
+            and Samba under Linux. Produced full technical documentation including
+            architecture diagrams, FCFA budget, and an administration guide with terminal outputs.
+          </p>
+          <div class="exp-tags mono">
+            <span>Linux</span><span>OpenLDAP</span><span>Samba</span>
+            <span>Networking</span><span>Tech Writing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certification CISCO -->
+      <div class="exp-card reveal">
+        <div class="exp-left">
+          <span class="exp-date mono" data-i18n="exp_cisco_date">Dec-2024</span>
+        </div>
+        <div class="exp-right">
+          <div class="exp-header">
+            <h3 data-i18n="exp_cisco_title">IT Hardware Essentials</h3>
+            <span class="exp-company accent">CISCO</span>
+            <span class="exp-type mono" data-i18n="exp_cisco_type">Certification</span>
+          </div>
+          <p data-i18n="exp_cisco_desc">
+            Completed the CISCO IT Hardware Essentials certification covering computer components,
+            hardware diagnostics, OS installation, and basic network configuration.
+          </p>
+          <div class="exp-tags mono">
+            <span>Hardware</span><span>Networking</span><span>OS</span><span>CISCO</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+  <!-- ============================================================
+       INTERNSHIP — Future Interns Full Stack Web Development
+       Section dédiée au stage : présente le programme, les 3 tâches
+       avec leur statut en temps réel, les règles et les livrables.
+       Utile pour les évaluateurs et les recruteurs qui veulent voir
+       dans quel cadre les projets ont été réalisés.
+  ============================================================ -->
+  <section id="internship">
+    <div class="section-inner">
+      <p class="section-eye mono" data-i18n="nav_internship">05 — Internship</p>
+      <h2 data-i18n="intern_h2">Future Interns<br /><span class="accent">Full Stack Web Dev</span></h2>
+
+      <!-- En-tête du programme -->
+      <div class="intern-header">
+        <div class="intern-badge mono">
+          <span class="ib-label" data-i18n="intern_track">Track</span>
+          <span class="ib-value accent">FS — Full Stack</span>
+        </div>
+        <div class="intern-badge mono">
+          <span class="ib-label" data-i18n="intern_repo">Repo prefix</span>
+          <span class="ib-value accent">FUTURE_FS_0X</span>
+        </div>
+        <div class="intern-badge mono">
+          <span class="ib-label" data-i18n="intern_model">Model</span>
+          <span class="ib-value" data-i18n="intern_model_val">Self-directed, remote</span>
+        </div>
+        <div class="intern-badge mono">
+          <span class="ib-label" data-i18n="intern_cert">Certificate</span>
+          <span class="ib-value" data-i18n="intern_cert_val">2 tasks min · LoR at 3</span>
+        </div>
+      </div>
+
+      <!-- Les 3 tâches -->
+      <div class="tasks-grid">
+
+        <!--
+          TASK 1 — Portfolio (celle-ci même)
+          Statut : DONE — c'est le fichier que tu lis en ce moment.
+        -->
+        <div class="task-card done reveal">
+          <div class="task-meta">
+            <span class="task-num mono">FUTURE_FS_01</span>
+            <span class="task-status done-badge mono" data-i18n="task_done">✓ Done</span>
+          </div>
+          <h3 data-i18n="task1_title">Personal Portfolio Website</h3>
+          <p data-i18n="task1_desc">
+            Build a personal portfolio to showcase skills, projects and professional profile.
+            Interactive resume sections, contact form with email notifications, SEO-friendly structure.
+          </p>
+          <div class="task-stack mono">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web3Forms</span><span>Netlify</span>
+          </div>
+          <div class="task-deliverable">
+            <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
+            <a href="https://github.com/resval696/FUTURE_FS_01"
+               target="_blank" rel="noopener" class="task-link mono">
+              github.com/resval696/FUTURE_FS_01 ↗
+            </a>
+          </div>
+        </div>
+
+        <!--
+          TASK 2 — Mini CRM
+          Statut : IN PROGRESS (à mettre à jour quand terminée)
+        -->
+        <div class="task-card wip reveal">
+          <div class="task-meta">
+            <span class="task-num mono">FUTURE_FS_02</span>
+            <span class="task-status wip-badge mono" data-i18n="task_wip">◌ In progress</span>
+          </div>
+          <h3 data-i18n="task2_title">Client Lead Management System</h3>
+          <p data-i18n="task2_desc">
+            Mini CRM to manage client leads from contact forms. Lead listing (name, email, source, status),
+            status updates (new / contacted / converted), notes per lead, secure admin access.
+          </p>
+          <div class="task-stack mono">
+            <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+          </div>
+          <div class="task-skills">
+            <span class="mono accent" data-i18n="task_skills">Skills →</span>
+            <span class="task-skills-val" data-i18n="task2_skills">CRUD, backend integration, database management, business workflows</span>
+          </div>
+        </div>
+
+        <!--
+          TASK 3 — Local Business Website
+          Statut : TODO
+        -->
+        <div class="task-card todo reveal">
+          <div class="task-meta">
+            <span class="task-num mono">FUTURE_FS_03</span>
+            <span class="task-status todo-badge mono" data-i18n="task_todo">○ To do</span>
+          </div>
+          <h3 data-i18n="task3_title">Local Business Website &amp; Live Pitch</h3>
+          <p data-i18n="task3_desc">
+            Build a professional website for a real local business (restaurant, café, gym, salon…)
+            and pitch it to the owner as a live project. Includes a short explanation of how
+            the website helps the business grow.
+          </p>
+          <div class="task-stack mono">
+            <span>HTML/CSS/JS</span><span>Figma</span>
+          </div>
+          <div class="task-skills">
+            <span class="mono accent" data-i18n="task_skills">Skills →</span>
+            <span class="task-skills-val" data-i18n="task3_skills">Real-world dev, client communication, pitching, business problem solving</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Roadmap du programme (condensée) -->
+      <div class="intern-roadmap reveal">
+        <p class="section-eye mono" style="margin-bottom:20px;" data-i18n="roadmap_title">Program Roadmap</p>
+        <div class="roadmap-steps">
+          <div class="roadmap-step done-step">
+            <span class="rs-dot done-dot"></span>
+            <span class="rs-label" data-i18n="rm_offer">Offer Letter received</span>
+          </div>
+          <div class="roadmap-line"></div>
+          <div class="roadmap-step active-step">
+            <span class="rs-dot active-dot"></span>
+            <span class="rs-label" data-i18n="rm_tasks">Skill &amp; Task Phase</span>
+          </div>
+          <div class="roadmap-line"></div>
+          <div class="roadmap-step">
+            <span class="rs-dot"></span>
+            <span class="rs-label" data-i18n="rm_submit">Project Submission &amp; Review</span>
+          </div>
+          <div class="roadmap-line"></div>
+          <div class="roadmap-step">
+            <span class="rs-dot"></span>
+            <span class="rs-label" data-i18n="rm_cert">Certification &amp; Career Access</span>
+          </div>
+          <div class="roadmap-line"></div>
+          <div class="roadmap-step">
+            <span class="rs-dot"></span>
+            <span class="rs-label" data-i18n="rm_complete">Program Completion &amp; Verification</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-eye mono" data-i18n="nav_contact">04 — Contact</p>
+
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 data-i18n="contact_h2">Let's build<br /><span class="accent">something together.</span></h2>
+          <p data-i18n="contact_sub">Open to internships, freelance projects, and collaborations. I respond within 24h.</p>
+          <div class="contact-links">
+            <a href="https://github.com/resval696" target="_blank" rel="noopener" class="contact-link">
+              <span class="mono accent">gh</span> github.com/resval696
+            </a>
+            <a href="https://www.linkedin.com/in/koffi-isra%C3%ABl/" target="_blank" rel="noopener" class="contact-link">
+              <span class="mono accent">in</span> linkedin
+            </a>
+            <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="contact-link">
+              <span class="mono accent">↓</span> <span data-i18n="cv_btn_contact">Download CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label class="mono" for="name" data-i18n="form_name">Name</label>
+              <input type="text" id="name" name="name" required
+                     data-i18n-placeholder="form_ph_name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label class="mono" for="email" data-i18n="form_email">Email</label>
+              <input type="email" id="email" name="email" required
+                     data-i18n-placeholder="form_ph_email" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label class="mono" for="message" data-i18n="form_message">Message</label>
+              <textarea id="message" name="message" rows="4" required
+                        data-i18n-placeholder="form_ph_msg" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width" id="submitBtn">
+              <span data-i18n="form_send">Send message</span>
+            </button>
+            <p class="form-note mono" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="nav-logo">K.I<span class="accent">.</span></span>
+      <span class="footer-copy">© 2025 ALOVE Koffi Israël.</span>
+      <span class="footer-copy mono accent">FUTURE_FS_01</span>
+    </div>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
