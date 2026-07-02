@@ -35,7 +35,7 @@ const i18n = {
     about_h2: "Code with purpose,<br /><span class=\"accent\">ship with care.</span>",
     about_p1: "I'm Koffi Israël ALOVE, semester 4 Application Development student at ESIG Global Success, Lomé. I started with Java and C fundamentals, progressed through web (HTML/CSS/PHP/JS), then specialised in mobile with Flutter — now I build full-stack products across the entire stack.",
     about_p2: "My approach: understand the problem first, architect a clean solution, then build it. I care about the details — from database schema design to pixel-level UI.",
-    about_portfolio: "Full portfolio ↗",
+    about_portfolio: "LinkedIn",
 
     /* Timeline */
     tl_esig:   "Licence Dev. Applications — ESIG Global Success (in progress)",
@@ -172,7 +172,7 @@ const i18n = {
     about_h2: "Coder avec intention,<br /><span class=\"accent\">livrer avec soin.</span>",
     about_p1: "Je suis Koffi Israël ALOVE, étudiant en semestre 4 Développement d'Applications à l'ESIG Global Success de Lomé. J'ai démarré avec Java et C, progressé vers le web (HTML/CSS/PHP/JS), puis me suis spécialisé dans le mobile avec Flutter — je construis maintenant des produits full-stack sur toute la stack.",
     about_p2: "Mon approche : comprendre le problème d'abord, architecturer une solution propre, puis construire. Je soigne les détails — du schéma BDD au pixel d'interface.",
-    about_portfolio: "Portfolio complet ↗",
+    about_portfolio: "LinkedIn",
 
     /* Timeline */
     tl_esig:   "Licence Dév. d'Applications — ESIG Global Success (en cours)",
