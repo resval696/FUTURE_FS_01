@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +16,12 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="src/style.css" />
 </head>
+
 <body>
 
   <!-- ============================================================
@@ -28,18 +32,17 @@
       <span class="nav-logo">K.I<span class="accent">.</span></span>
 
       <ul class="nav-links">
-        <li><a href="#about"      data-i18n="nav_about">01 — About</a></li>
-        <li><a href="#skills"     data-i18n="nav_skills">02 — Skills</a></li>
-        <li><a href="#projects"   data-i18n="nav_projects">03 — Projects</a></li>
+        <li><a href="#about" data-i18n="nav_about">01 — About</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">02 — Skills</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">03 — Projects</a></li>
         <li><a href="#experience" data-i18n="nav_exp">04 — Experience</a></li>
         <li><a href="#internship" data-i18n="nav_internship">05 — Internship</a></li>
-        <li><a href="#contact"    data-i18n="nav_contact">06 — Contact</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">06 — Contact</a></li>
       </ul>
 
       <div class="nav-actions">
         <!-- CV : pointe vers src/cv.pdf — glisse ton PDF ici -->
-        <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf"
-           class="btn-cv mono" id="cvBtn" title="Download CV">
+        <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="btn-cv mono" id="cvBtn" title="Download CV">
           <span class="cv-icon">↓</span>
           <span data-i18n="cv_btn">CV</span>
         </a>
@@ -58,12 +61,12 @@
 
     <!-- Menu mobile -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#about"      data-i18n="nav_about">01 — About</a>
-        <a href="#skills"     data-i18n="nav_skills">02 — Skills</a>
-        <a href="#projects"   data-i18n="nav_projects">03 — Projects</a>
-        <a href="#experience" data-i18n="nav_exp">04 — Experience</a>
-        <a href="#internship" data-i18n="nav_internship">05 — Internship</a>
-        <a href="#contact"    data-i18n="nav_contact">06 — Contact</a>
+      <a href="#about" data-i18n="nav_about">01 — About</a>
+      <a href="#skills" data-i18n="nav_skills">02 — Skills</a>
+      <a href="#projects" data-i18n="nav_projects">03 — Projects</a>
+      <a href="#experience" data-i18n="nav_exp">04 — Experience</a>
+      <a href="#internship" data-i18n="nav_internship">05 — Internship</a>
+      <a href="#contact" data-i18n="nav_contact">06 — Contact</a>
       <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="mono" data-i18n="cv_btn_mobile">↓ Download CV</a>
     </div>
   </nav>
@@ -72,7 +75,7 @@
        HERO — SVG path organique en fond + nom typé via JS
   ============================================================ -->
   <section id="hero">
-    <canvas id="heroCanvas" aria-hidden="true"></canvas>  
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
     <svg class="hero-line" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
       <path d="M-50,420 Q250,260 550,360 T1250,220" />
     </svg>
@@ -94,12 +97,13 @@
       <div class="hero-actions">
         <a href="#projects" class="btn-primary" data-i18n="hero_cta1">View my work</a>
         <a href="https://github.com/resval696" target="_blank" rel="noopener" class="btn-ghost">GitHub ↗</a>
-        <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="btn-ghost mono" data-i18n="hero_cta_cv">↓ Download CV</a>
+        <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="btn-ghost mono" data-i18n="hero_cta_cv">↓
+          Download CV</a>
       </div>
 
       <div class="hero-stats">
         <div class="stat">
-          <span class="stat-num" data-count="5">5+</span>
+          <span class="stat-num" data-count="10">10+</span>
           <span class="stat-label" data-i18n="stat_projects">Projects shipped</span>
         </div>
         <div class="stat-div"></div>
@@ -174,10 +178,10 @@
           </div>
 
           <div class="about-btns">
-            <a href="https://www.linkedin.com/in/koffi-isra%C3%ABl/"
-               target="_blank" rel="noopener" class="btn-outline" data-i18n="about_portfolio">LinkedIn</a>
-            <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf"
-               class="btn-outline btn-cv-about mono" data-i18n="cv_btn_about">↓ Download CV</a>
+            <a href="https://www.linkedin.com/in/koffi-isra%C3%ABl/" target="_blank" rel="noopener" class="btn-outline"
+              data-i18n="about_portfolio">LinkedIn</a>
+            <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="btn-outline btn-cv-about mono"
+              data-i18n="cv_btn_about">↓ Download CV</a>
           </div>
         </div>
 
@@ -200,7 +204,7 @@
               <span class="mono accent" data-i18n="card_location_label">location</span>
               <span>Lomé, Togo 🇹🇬</span>
             </div>
-            
+
             <!-- Certif CISCO ajouté ici — info concrète qui compte pour un recruteur -->
             <div class="about-info-row">
               <span class="mono accent" data-i18n="card_cert_label">cert</span>
@@ -339,8 +343,10 @@
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span>
           </div>
           <div class="project-links mono">
-            <a href="https://resval696.github.io/gym-nova/" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
-            <a href="https://github.com/resval696/gym-nova" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
+            <a href="https://resval696.github.io/gym-nova/" target="_blank" rel="noopener" data-i18n="link_live">Live
+              ↗</a>
+            <a href="https://github.com/resval696/gym-nova" target="_blank" rel="noopener"
+              data-i18n="link_github">GitHub ↗</a>
           </div>
         </div>
 
@@ -351,12 +357,14 @@
             <span class="project-status live mono" data-i18n="proj_live">Live</span>
           </div>
           <h3>Smart Budget Planner</h3>
-          <p data-i18n="proj_budget">Personal finance tracker using the 50/30/20 rule. Chart.js visualizations, localStorage persistence, fintech UI.</p>
+          <p data-i18n="proj_budget">Personal finance tracker using the 50/30/20 rule. Chart.js visualizations,
+            localStorage persistence, fintech UI.</p>
           <div class="project-tags mono">
             <span>JavaScript</span><span>Chart.js</span><span>CSS</span>
           </div>
           <div class="project-links mono">
-            <a href="https://smart-budgetplanner.netlify.app" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
+            <a href="https://smart-budgetplanner.netlify.app" target="_blank" rel="noopener" data-i18n="link_live">Live
+              ↗</a>
             <a href="https://github.com/resval696" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
           </div>
         </div>
@@ -368,7 +376,8 @@
             <span class="project-status live mono" data-i18n="proj_live">Live</span>
           </div>
           <h3>EcoWeather</h3>
-          <p data-i18n="proj_weather">Weather app with geolocation, OpenWeatherMap API, and dynamic CSS themes that shift with conditions.</p>
+          <p data-i18n="proj_weather">Weather app with geolocation, OpenWeatherMap API, and dynamic CSS themes that
+            shift with conditions.</p>
           <div class="project-tags mono">
             <span>JavaScript</span><span>OpenWeatherMap API</span><span>CSS</span>
           </div>
@@ -382,15 +391,146 @@
         <div class="project-card reveal">
           <div class="project-meta">
             <span class="project-type mono">Full Stack</span>
-            <span class="project-status wip mono" data-i18n="proj_wip">In progress</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
           </div>
           <h3>AutoÉcole Online</h3>
-          <p data-i18n="proj_ecole">Online driving school — React frontend, Express/MongoDB backend, JWT auth, quiz engine, booking system, admin panel.</p>
+          <p data-i18n="proj_ecole">Online driving school — React frontend, Express/MongoDB backend, JWT auth, quiz
+            engine, booking system, admin panel.</p>
           <div class="project-tags mono">
             <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
           </div>
           <div class="project-links mono">
             <a href="https://github.com/resval696" target="_blank" rel="noopener" data-i18n="link_github">GitHub ↗</a>
+          </div>
+        </div>
+        <!-- PaperCalc -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_web">Web App</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>PaperCalc</h3>
+          <p data-i18n="proj_papercalc">
+            Browser-based calculator with a graph paper aesthetic — results circled in
+            red ink. Full arithmetic operations, division-by-zero handling, operator
+            chaining, CSS Grid layout. Built for Oasis Infobyte SIP L2-T1.
+          </p>
+          <div class="project-tags mono">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://github.com/resval696/OIBSIP" target="_blank" rel="noopener" data-i18n="link_github">GitHub
+              ↗</a>
+          </div>
+        </div>
+
+        <!-- Miyazaki Tribute -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_web">Web Page</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>Hayao Miyazaki — Tribute</h3>
+          <p data-i18n="proj_miyazaki">
+            Tribute page dedicated to Hayao Miyazaki with a Studio Ghibli-inspired
+            aesthetic — sky, wind, clouds. Biography, timeline, quote block, responsive
+            layout. Built for Oasis Infobyte SIP L2-T2.
+          </p>
+          <div class="project-tags mono">
+            <span>HTML</span><span>CSS</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://tribute-miyazaki.netlify.app" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
+            <a href="https://github.com/resval696/OIBSIP" target="_blank" rel="noopener" data-i18n="link_github">GitHub
+              ↗</a>
+          </div>
+        </div>
+
+        <!-- Flow To-Do -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_web">Web App</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>Focus Journal — To-Do App</h3>
+          <p data-i18n="proj_flow">
+            Pastel productivity to-do app with pending/completed lists, inline edit,
+            timestamps, task counters and localStorage persistence. Inspired by
+            Notion/Todoist. Built for Oasis Infobyte SIP L2-T3.
+          </p>
+          <div class="project-tags mono">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://focus-journals.netlify.app" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
+            <a href="https://github.com/resval696/OIBSIP" target="_blank" rel="noopener" data-i18n="link_github">GitHub
+              ↗</a>
+          </div>
+        </div>
+
+        <!-- Future Interns Task 1 — Portfolio -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono" data-i18n="proj_type_web">Web App</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>Portfolio — FUTURE_FS_01</h3>
+          <p data-i18n="proj_fs01">
+            Personal portfolio with Forest + Indigo identity, EN/FR switcher,
+            6 custom animations, internship tracker and CV download.
+            Future Interns Full Stack Track — Task 1.
+          </p>
+          <div class="project-tags mono">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web3Forms</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://github.com/resval696/FUTURE_FS_01" target="_blank" rel="noopener"
+              data-i18n="link_github">GitHub ↗</a>
+            <a href="https://portfolio-alove.netlify.app" target="_blank" rel="noopener" data-i18n="link_live">Live
+              ↗</a>
+          </div>
+        </div>
+
+        <!-- Future Interns Task 2 — Mini CRM -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono">Full Stack</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>Mini CRM — FUTURE_FS_02</h3>
+          <p data-i18n="proj_fs02">
+            Client lead management system — React frontend, Express/PostgreSQL
+            backend, JWT auth, CRUD pipeline, notes per lead.
+            Future Interns Full Stack Track — Task 2.
+          </p>
+          <div class="project-tags mono">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://github.com/resval696/FUTURE_FS_02" target="_blank" rel="noopener"
+              data-i18n="link_github">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- Future Interns Task 3 — Kokouvi Wash -->
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type mono">Full Stack</span>
+            <span class="project-status live mono" data-i18n="proj_live">Live</span>
+          </div>
+          <h3>Kokouvi Wash — FUTURE_FS_03</h3>
+          <p data-i18n="proj_fs03">
+            Professional website for a real local laundry business in Lomé.
+            WhatsApp quote estimator, pickup scheduler, live order tracking,
+            interactive price list. Future Interns Full Stack Track — Task 3.
+          </p>
+          <div class="project-tags mono">
+            <span>React</span><span>Node.js</span><span>SQLite</span><span>Prisma</span>
+          </div>
+          <div class="project-links mono">
+            <a href="https://github.com/resval696/FUTURE_FS_03" target="_blank" rel="noopener"
+              data-i18n="link_github">GitHub ↗</a>
+            <a href="https://kokouvi-wash.onrender.com" target="_blank" rel="noopener" data-i18n="link_live">Live ↗</a>
           </div>
         </div>
 
@@ -403,84 +543,106 @@
      Expériences, certifications, bénévolat — tout ce qui
      compte professionnellement mais n'est pas un projet livré.
 ============================================================ -->
-<section id="experience">
-  <div class="section-inner">
-    <p class="section-eye mono" data-i18n="nav_exp">04 — Experience</p>
-    <h2 data-i18n="exp_h2">Professional <span class="accent">Experience</span></h2>
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-eye mono" data-i18n="nav_exp">04 — Experience</p>
+      <h2 data-i18n="exp_h2">Professional <span class="accent">Experience</span></h2>
 
-    <div class="exp-list">
+      <div class="exp-list">
 
-      <!-- Future Interns -->
-      <div class="exp-card reveal">
-        <div class="exp-left">
-          <span class="exp-date mono" data-i18n="exp_fi_date">29 Jun-2026 - 29 Jul-2026</span>
-        </div>
-        <div class="exp-right">
-          <div class="exp-header">
-            <h3 data-i18n="exp_fi_title">Full Stack Web Developer Intern</h3>
-            <span class="exp-company accent" data-i18n="exp_fi_company">Future Interns</span>
-            <span class="exp-type mono" data-i18n="exp_fi_type">Remote · Internship</span>
+        <!-- Future Interns -->
+        <div class="exp-card reveal">
+          <div class="exp-left">
+            <span class="exp-date mono" data-i18n="exp_fi_date">29 Jun-2026 - 29 Jul-2026</span>
           </div>
-          <p data-i18n="exp_fi_desc">
-            Self-directed internship building and shipping real full-stack web projects.
-            Developing a personal portfolio, a client lead management CRM, and a local business website.
-            Working with HTML/CSS/JS, React, Node.js, MongoDB and modern deployment pipelines.
-          </p>
-          <div class="exp-tags mono">
-            <span>React</span><span>Node.js</span><span>MongoDB</span>
-            <span>HTML/CSS/JS</span><span>Netlify</span><span>GitHub</span>
+          <div class="exp-right">
+            <div class="exp-header">
+              <h3 data-i18n="exp_fi_title">Full Stack Web Developer Intern</h3>
+              <span class="exp-company accent" data-i18n="exp_fi_company">Future Interns</span>
+              <span class="exp-type mono" data-i18n="exp_fi_type">Remote · Internship</span>
+            </div>
+            <p data-i18n="exp_fi_desc">
+              Self-directed internship building and shipping real full-stack web projects.
+              Developing a personal portfolio, a client lead management CRM, and a local business website.
+              Working with HTML/CSS/JS, React, Node.js, MongoDB and modern deployment pipelines.
+            </p>
+            <div class="exp-tags mono">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+              <span>HTML/CSS/JS</span><span>Netlify</span><span>GitHub</span>
+            </div>
           </div>
         </div>
+        <!-- Oasis Infobyte -->
+        <div class="exp-card reveal">
+          <div class="exp-left">
+            <span class="exp-date mono" data-i18n="exp_oasis_date">Jul-2026 - Aug-2026</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-header">
+              <h3 data-i18n="exp_oasis_title">Web Development & Design Intern</h3>
+              <span class="exp-company accent">Oasis Infobyte</span>
+              <span class="exp-type mono" data-i18n="exp_oasis_type">Remote · SIP Internship</span>
+            </div>
+            <p data-i18n="exp_oasis_desc">
+              Self-directed internship completing Level 2 of the Web Development & Designing track.
+              Building 4 projects — a calculator, a tribute page, a to-do app, and a login
+              authentication system — using HTML, CSS, Vanilla JavaScript and Node.js.
+            </p>
+            <div class="exp-tags mono">
+              <span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span>
+              <span>DOM Manipulation</span><span>LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOPS Week -->
+        <div class="exp-card reveal">
+          <div class="exp-left">
+            <span class="exp-date mono" data-i18n="exp_sec_date">Fev-2026</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-header">
+              <h3 data-i18n="exp_sec_title">SECOPS Professionalization Project</h3>
+              <span class="exp-company accent">ESIG Global Success</span>
+              <span class="exp-type mono" data-i18n="exp_sec_type">Academic · Group Lead</span>
+            </div>
+            <p data-i18n="exp_sec_desc">
+              Led a team of 6 on a systems administration project implementing OpenLDAP
+              and Samba under Linux. Produced full technical documentation including
+              architecture diagrams, FCFA budget, and an administration guide with terminal outputs.
+            </p>
+            <div class="exp-tags mono">
+              <span>Linux</span><span>OpenLDAP</span><span>Samba</span>
+              <span>Networking</span><span>Tech Writing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification CISCO -->
+        <div class="exp-card reveal">
+          <div class="exp-left">
+            <span class="exp-date mono" data-i18n="exp_cisco_date">Dec-2024</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-header">
+              <h3 data-i18n="exp_cisco_title">IT Hardware Essentials</h3>
+              <span class="exp-company accent">CISCO</span>
+              <span class="exp-type mono" data-i18n="exp_cisco_type">Certification</span>
+            </div>
+            <p data-i18n="exp_cisco_desc">
+              Completed the CISCO IT Hardware Essentials certification covering computer components,
+              hardware diagnostics, OS installation, and basic network configuration.
+            </p>
+            <div class="exp-tags mono">
+              <span>Hardware</span><span>Networking</span><span>OS</span><span>CISCO</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-
-      <!-- SECOPS Week -->
-      <div class="exp-card reveal">
-        <div class="exp-left">
-          <span class="exp-date mono" data-i18n="exp_sec_date">Fev-2026</span>
-        </div>
-        <div class="exp-right">
-          <div class="exp-header">
-            <h3 data-i18n="exp_sec_title">SECOPS Professionalization Project</h3>
-            <span class="exp-company accent">ESIG Global Success</span>
-            <span class="exp-type mono" data-i18n="exp_sec_type">Academic · Group Lead</span>
-          </div>
-          <p data-i18n="exp_sec_desc">
-            Led a team of 6 on a systems administration project implementing OpenLDAP
-            and Samba under Linux. Produced full technical documentation including
-            architecture diagrams, FCFA budget, and an administration guide with terminal outputs.
-          </p>
-          <div class="exp-tags mono">
-            <span>Linux</span><span>OpenLDAP</span><span>Samba</span>
-            <span>Networking</span><span>Tech Writing</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification CISCO -->
-      <div class="exp-card reveal">
-        <div class="exp-left">
-          <span class="exp-date mono" data-i18n="exp_cisco_date">Dec-2024</span>
-        </div>
-        <div class="exp-right">
-          <div class="exp-header">
-            <h3 data-i18n="exp_cisco_title">IT Hardware Essentials</h3>
-            <span class="exp-company accent">CISCO</span>
-            <span class="exp-type mono" data-i18n="exp_cisco_type">Certification</span>
-          </div>
-          <p data-i18n="exp_cisco_desc">
-            Completed the CISCO IT Hardware Essentials certification covering computer components,
-            hardware diagnostics, OS installation, and basic network configuration.
-          </p>
-          <div class="exp-tags mono">
-            <span>Hardware</span><span>Networking</span><span>OS</span><span>CISCO</span>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
- 
+  </section>
+
   <!-- ============================================================
        INTERNSHIP — Future Interns Full Stack Web Development
        Section dédiée au stage : présente le programme, les 3 tâches
@@ -535,8 +697,7 @@
           </div>
           <div class="task-deliverable">
             <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
-            <a href="https://github.com/resval696/FUTURE_FS_01"
-               target="_blank" rel="noopener" class="task-link mono">
+            <a href="https://github.com/resval696/FUTURE_FS_01" target="_blank" rel="noopener" class="task-link mono">
               github.com/resval696/FUTURE_FS_01 ↗
             </a>
           </div>
@@ -544,12 +705,12 @@
 
         <!--
           TASK 2 — Mini CRM
-          Statut : IN PROGRESS (à mettre à jour quand terminée)
+          Statut : DONE
         -->
-        <div class="task-card wip reveal">
+        <div class="task-card done reveal">
           <div class="task-meta">
             <span class="task-num mono">FUTURE_FS_02</span>
-            <span class="task-status wip-badge mono" data-i18n="task_wip">◌ In progress</span>
+            <span class="task-status done-badge mono" data-i18n="task_done">✓ Done</span>
           </div>
           <h3 data-i18n="task2_title">Client Lead Management System</h3>
           <p data-i18n="task2_desc">
@@ -561,18 +722,25 @@
           </div>
           <div class="task-skills">
             <span class="mono accent" data-i18n="task_skills">Skills →</span>
-            <span class="task-skills-val" data-i18n="task2_skills">CRUD, backend integration, database management, business workflows</span>
+            <span class="task-skills-val" data-i18n="task2_skills">CRUD, backend integration, database management,
+              business workflows</span>
+          </div>
+          <div class="task-deliverable">
+            <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
+            <a href="https://github.com/resval696/FUTURE_FS_02" target="_blank" rel="noopener" class="task-link mono">
+              github.com/resval696/FUTURE_FS_02 ↗
+            </a>
           </div>
         </div>
 
         <!--
           TASK 3 — Local Business Website
-          Statut : TODO
+          Statut : DONE
         -->
-        <div class="task-card todo reveal">
+        <div class="task-card done reveal">
           <div class="task-meta">
             <span class="task-num mono">FUTURE_FS_03</span>
-            <span class="task-status todo-badge mono" data-i18n="task_todo">○ To do</span>
+            <span class="task-status done-badge mono" data-i18n="task_done">✓ Done</span>
           </div>
           <h3 data-i18n="task3_title">Local Business Website &amp; Live Pitch</h3>
           <p data-i18n="task3_desc">
@@ -585,7 +753,14 @@
           </div>
           <div class="task-skills">
             <span class="mono accent" data-i18n="task_skills">Skills →</span>
-            <span class="task-skills-val" data-i18n="task3_skills">Real-world dev, client communication, pitching, business problem solving</span>
+            <span class="task-skills-val" data-i18n="task3_skills">Real-world dev, client communication, pitching,
+              business problem solving</span>
+          </div>
+          <div class="task-deliverable">
+            <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
+            <a href="https://github.com/resval696/FUTURE_FS_03" target="_blank" rel="noopener" class="task-link mono">
+              github.com/resval696/FUTURE_FS_03 ↗
+            </a>
           </div>
         </div>
 
@@ -600,32 +775,150 @@
             <span class="rs-label" data-i18n="rm_offer">Offer Letter received</span>
           </div>
           <div class="roadmap-line"></div>
-          <div class="roadmap-step active-step">
-            <span class="rs-dot active-dot"></span>
+          <div class="roadmap-step done-step">
+            <span class="rs-dot done-dot"></span>
             <span class="rs-label" data-i18n="rm_tasks">Skill &amp; Task Phase</span>
           </div>
           <div class="roadmap-line"></div>
-          <div class="roadmap-step">
-            <span class="rs-dot"></span>
+          <div class="roadmap-step done-step">
+            <span class="rs-dot done-dot"></span>
             <span class="rs-label" data-i18n="rm_submit">Project Submission &amp; Review</span>
           </div>
           <div class="roadmap-line"></div>
-          <div class="roadmap-step">
-            <span class="rs-dot"></span>
+          <div class="roadmap-step done-step">
+            <span class="rs-dot done-dot"></span>
             <span class="rs-label" data-i18n="rm_cert">Certification &amp; Career Access</span>
           </div>
           <div class="roadmap-line"></div>
-          <div class="roadmap-step">
-            <span class="rs-dot"></span>
+          <div class="roadmap-step done-step">
+            <span class="rs-dot done-dot"></span>
             <span class="rs-label" data-i18n="rm_complete">Program Completion &amp; Verification</span>
           </div>
+        </div>
+      </div>
+      <!-- ============================================================
+     OASIS INFOBYTE — second internship tracker
+============================================================ -->
+      <div class="oasis-section reveal">
+        <div class="section-divider-inner">
+          <p class="section-eye mono" style="margin-top:60px;">Oasis Infobyte · SIP</p>
+          <h2 data-i18n="oasis_h2">Web Development <span class="accent">&amp; Design</span></h2>
+        </div>
+
+        <!-- Badges info -->
+        <div class="intern-header">
+          <div class="intern-badge mono">
+            <span class="ib-label" data-i18n="intern_track">Track</span>
+            <span class="ib-value accent">Web Dev &amp; Design — Level 2</span>
+          </div>
+          <div class="intern-badge mono">
+            <span class="ib-label" data-i18n="intern_repo">Repo</span>
+            <span class="ib-value accent">OIBSIP</span>
+          </div>
+          <div class="intern-badge mono">
+            <span class="ib-label" data-i18n="intern_model">Model</span>
+            <span class="ib-value" data-i18n="intern_model_val">Self-directed, remote</span>
+          </div>
+          <div class="intern-badge mono">
+            <span class="ib-label">Deadline</span>
+            <span class="ib-value" style="color:#E8A33D;">15 August 2026</span>
+          </div>
+        </div>
+
+        <!-- 4 tâches -->
+        <div class="tasks-grid">
+
+          <div class="task-card done reveal">
+            <div class="task-meta">
+              <span class="task-num mono">WebDev-L2-Calculator</span>
+              <span class="task-status done-badge mono" data-i18n="task_done">✓ Done</span>
+            </div>
+            <h3 data-i18n="oasis_t1_title">Calculator — PaperCalc</h3>
+            <p data-i18n="oasis_t1_desc">
+              Browser calculator with graph paper theme, red ink result highlight,
+              full arithmetic, operator chaining, CSS Grid layout.
+            </p>
+            <div class="task-stack mono">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="task-deliverable">
+              <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
+              <a href="https://github.com/resval696/OIBSIP" target="_blank" rel="noopener" class="task-link mono">
+                github.com/resval696/OIBSIP ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="task-card done reveal">
+            <div class="task-meta">
+              <span class="task-num mono">WebDev-L2-TributePage</span>
+              <span class="task-status done-badge mono" data-i18n="task_done">✓ Done</span>
+            </div>
+            <h3 data-i18n="oasis_t2_title">Tribute Page — Hayao Miyazaki</h3>
+            <p data-i18n="oasis_t2_desc">
+              Ghibli-inspired tribute page — biography, timeline, quote block,
+              sky/wind/clouds aesthetic, fully responsive.
+            </p>
+            <div class="task-stack mono">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <div class="task-deliverable">
+              <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
+              <a href="https://github.com/resval696/OIBSIP" target="_blank" rel="noopener" class="task-link mono">
+                github.com/resval696/OIBSIP ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="task-card done reveal">
+            <div class="task-meta">
+              <span class="task-num mono">WebDev-L2-TodoApp</span>
+              <span class="task-status done-badge mono" data-i18n="task_done">✓ Done</span>
+            </div>
+            <h3 data-i18n="oasis_t3_title">To-Do App — Flow</h3>
+            <p data-i18n="oasis_t3_desc">
+              Pastel productivity app — pending/completed lists, inline edit,
+              timestamps, task counters, localStorage persistence.
+            </p>
+            <div class="task-stack mono">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span>
+            </div>
+            <div class="task-deliverable">
+              <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
+              <a href="https://github.com/resval696/OIBSIP" target="_blank" rel="noopener" class="task-link mono">
+                github.com/resval696/OIBSIP ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="task-card done reveal">
+            <div class="task-meta">
+              <span class="task-num mono">WebDev-L2-LoginAuth</span>
+              <span class="task-status done-badge mono" data-i18n="task_done">✓ Done</span>
+            </div>
+            <h3 data-i18n="oasis_t4_title">Login Authentication System</h3>
+            <p data-i18n="oasis_t4_desc">
+              Full-stack auth system — registration, login validation, protected
+              dashboard, bcrypt password hashing, JWT session management.
+            </p>
+            <div class="task-stack mono">
+              <span>Node.js</span><span>Express</span><span>SQLite</span><span>JWT</span><span>bcrypt</span>
+            </div>
+            <div class="task-deliverable">
+              <span class="mono accent" data-i18n="task_deliverable">Deliverable →</span>
+              <a href="https://github.com/resval696/OIBSIP" target="_blank" rel="noopener" class="task-link mono">
+                github.com/resval696/OIBSIP ↗
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
     </div>
   </section>
 
-   <!-- ============================================================
+  <!-- ============================================================
        CONTACT
   ============================================================ -->
   <section id="contact">
@@ -635,12 +928,14 @@
       <div class="contact-grid">
         <div class="contact-left">
           <h2 data-i18n="contact_h2">Let's build<br /><span class="accent">something together.</span></h2>
-          <p data-i18n="contact_sub">Open to internships, freelance projects, and collaborations. I respond within 24h.</p>
+          <p data-i18n="contact_sub">Open to internships, freelance projects, and collaborations. I respond within 24h.
+          </p>
           <div class="contact-links">
             <a href="https://github.com/resval696" target="_blank" rel="noopener" class="contact-link">
               <span class="mono accent">gh</span> github.com/resval696
             </a>
-            <a href="https://www.linkedin.com/in/koffi-isra%C3%ABl/" target="_blank" rel="noopener" class="contact-link">
+            <a href="https://www.linkedin.com/in/koffi-isra%C3%ABl/" target="_blank" rel="noopener"
+              class="contact-link">
               <span class="mono accent">in</span> linkedin
             </a>
             <a href="src/cv.pdf" download="CV_ALOVE_Koffi_Israel.pdf" class="contact-link">
@@ -653,18 +948,18 @@
           <form id="contactForm" class="contact-form">
             <div class="form-group">
               <label class="mono" for="name" data-i18n="form_name">Name</label>
-              <input type="text" id="name" name="name" required
-                     data-i18n-placeholder="form_ph_name" placeholder="Your name" />
+              <input type="text" id="name" name="name" required data-i18n-placeholder="form_ph_name"
+                placeholder="Your name" />
             </div>
             <div class="form-group">
               <label class="mono" for="email" data-i18n="form_email">Email</label>
-              <input type="email" id="email" name="email" required
-                     data-i18n-placeholder="form_ph_email" placeholder="your@email.com" />
+              <input type="email" id="email" name="email" required data-i18n-placeholder="form_ph_email"
+                placeholder="your@email.com" />
             </div>
             <div class="form-group">
               <label class="mono" for="message" data-i18n="form_message">Message</label>
-              <textarea id="message" name="message" rows="4" required
-                        data-i18n-placeholder="form_ph_msg" placeholder="Tell me about your project..."></textarea>
+              <textarea id="message" name="message" rows="4" required data-i18n-placeholder="form_ph_msg"
+                placeholder="Tell me about your project..."></textarea>
             </div>
             <button type="submit" class="btn-primary full-width" id="submitBtn">
               <span data-i18n="form_send">Send message</span>
@@ -688,4 +983,5 @@
 
   <script src="src/main.js"></script>
 </body>
+
 </html>

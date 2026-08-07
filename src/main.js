@@ -7,29 +7,29 @@
 const i18n = {
   en: {
     /* Navigation */
-    nav_about:    "01 — About",
-    nav_skills:   "02 — Skills",
+    nav_about: "01 — About",
+    nav_skills: "02 — Skills",
     nav_projects: "03 — Projects",
-    nav_contact:  "04 — Contact",
+    nav_contact: "04 — Contact",
 
     /* CV */
-    cv_btn:         "CV",
-    cv_btn_mobile:  "↓ Download CV",
-    cv_btn_about:   "↓ Download CV",
+    cv_btn: "CV",
+    cv_btn_mobile: "↓ Download CV",
+    cv_btn_about: "↓ Download CV",
     cv_btn_contact: "Download CV (PDF)",
 
     /* Hero */
     hero_eyebrow: "Folio — Index 01 / Lomé, TG",
-    hero_title:   "Full Stack &amp; Mobile Developer",
-    hero_sub:     "I build web and mobile products — Flutter apps, Node.js APIs, React interfaces — with clean architecture and an eye for the details that make software feel right.",
-    hero_cta1:    "View my work",
-    hero_cta_cv:  "↓ Download CV",
-    scroll_hint:  "scroll ↓",
+    hero_title: "Full Stack &amp; Mobile Developer",
+    hero_sub: "I build web and mobile products — Flutter apps, Node.js APIs, React interfaces — with clean architecture and an eye for the details that make software feel right.",
+    hero_cta1: "View my work",
+    hero_cta_cv: "↓ Download CV",
+    scroll_hint: "scroll ↓",
 
     /* Stats */
     stat_projects: "Projects shipped",
-    stat_live:     "Live deployments",
-    stat_years:    "Years learning",
+    stat_live: "Live deployments",
+    stat_years: "Years learning",
 
     /* About text */
     about_h2: "Code with purpose,<br /><span class=\"accent\">ship with care.</span>",
@@ -38,135 +38,159 @@ const i18n = {
     about_portfolio: "LinkedIn",
 
     /* Timeline */
-    tl_esig:   "Licence Dev. Applications — ESIG Global Success (in progress)",
-    tl_bac:    "Baccalauréat — Lycée Lomé-cité",
+    tl_esig: "Licence Dev. Applications — ESIG Global Success (in progress)",
+    tl_bac: "Baccalauréat — Lycée Lomé-cité",
     tl_probat: "PROBAT",
-    tl_bepc:   "BEPC",
+    tl_bepc: "BEPC",
 
     /* About card */
-    card_role_label:     "role",
-    card_role_value:     "Dev Intern @ Future Interns",
-    card_school_label:   "school",
-    card_degree_label:   "degree",
-    card_degree_value:   "Licence — App. Development",
+    card_role_label: "role",
+    card_role_value: "Dev Intern @ Future Interns",
+    card_school_label: "school",
+    card_degree_label: "degree",
+    card_degree_value: "Licence — App. Development",
     card_location_label: "location",
-    card_cert_label:     "cert",
-    card_cert_value:     "CISCO — IT Hardware Essentials",
-    card_status_label:   "status",
-    card_status_value:   "Available for work",
+    card_cert_label: "cert",
+    card_cert_value: "CISCO — IT Hardware Essentials",
+    card_status_label: "status",
+    card_status_value: "Available for work",
 
     /* Skills */
-    skills_h2:    "What I work with",
-    sk_mobile:    "Mobile",
+    skills_h2: "What I work with",
+    sk_mobile: "Mobile",
     sk_languages: "Languages",
-    sk_frontend:  "Frontend",
-    sk_backend:   "Backend",
-    sk_db:        "Databases",
-    sk_devops:    "DevOps &amp; Systems",
-    sk_concepts:  "Concepts",
+    sk_frontend: "Frontend",
+    sk_backend: "Backend",
+    sk_db: "Databases",
+    sk_devops: "DevOps &amp; Systems",
+    sk_concepts: "Concepts",
 
     /* Projects */
-    proj_h2:           "Selected work",
-    proj_type_mobile:  "Mobile App",
-    proj_type_web:     "Web App",
+    proj_h2: "Selected work",
+    proj_type_mobile: "Mobile App",
+    proj_type_web: "Web App",
     proj_type_landing: "Landing Page",
-    proj_live:         "Live",
-    proj_wip:          "In progress",
+    proj_live: "Live",
+    proj_wip: "In progress",
     proj_dinease: "Restaurant discovery app for Lomé — users filter by budget and proximity. 4-screen flow: Home → Budget → Results → Restaurant detail. Built with Flutter/Dart, Firebase for data, Android Studio + VS Code.",
-    proj_gym:     "Gym management web app — front-end role. Designed in Figma first, then built with HTML/CSS/JS. Responsive layout, smooth scroll, clean UI.",
-    proj_budget:  "Personal finance tracker using the 50/30/20 rule. Chart.js visualizations, localStorage persistence, fintech UI.",
+    proj_gym: "Gym management web app — front-end role. Designed in Figma first, then built with HTML/CSS/JS. Responsive layout, smooth scroll, clean UI.",
+    proj_budget: "Personal finance tracker using the 50/30/20 rule. Chart.js visualizations, localStorage persistence, fintech UI.",
     proj_weather: "Weather app with geolocation, OpenWeatherMap API, and dynamic CSS themes that shift with conditions.",
-    proj_ecole:   "Online driving school — React frontend, Express/MongoDB backend, JWT auth, quiz engine, booking system, admin panel.",
-    link_live:    "Live ↗",
-    link_github:  "GitHub ↗",
+    proj_ecole: "Online driving school — React frontend, Express/MongoDB backend, JWT auth, quiz engine, booking system, admin panel.",
+    link_live: "Live ↗",
+    link_github: "GitHub ↗",
 
     /* Contact */
-    contact_h2:        "Let's build<br /><span class=\"accent\">something together.</span>",
-    contact_sub:       "Open to internships, freelance projects, and collaborations. I respond within 24h.",
+    contact_h2: "Let's build<br /><span class=\"accent\">something together.</span>",
+    contact_sub: "Open to internships, freelance projects, and collaborations. I respond within 24h.",
     contact_portfolio: "Portfolio",
-    form_name:         "Name",
-    form_email:        "Email",
-    form_message:      "Message",
-    form_send:         "Send message",
-    form_ph_name:      "Your name",
-    form_ph_email:     "your@email.com",
-    form_ph_msg:       "Tell me about your project...",
-    form_sending:      "Sending...",
-    form_success:      "Message sent — I'll reply within 24h.",
-    form_error:        "Something went wrong — reach me via GitHub.",
+    form_name: "Name",
+    form_email: "Email",
+    form_message: "Message",
+    form_send: "Send message",
+    form_ph_name: "Your name",
+    form_ph_email: "your@email.com",
+    form_ph_msg: "Tell me about your project...",
+    form_sending: "Sending...",
+    form_success: "Message sent — I'll reply within 24h.",
+    form_error: "Something went wrong — reach me via GitHub.",
     /* Internship section */
-    nav_internship:  "05 — Internship",
-    intern_h2:       "Future Interns<br /><span class=\"accent\">Full Stack Web Dev</span>",
-    intern_track:    "Track",
-    intern_repo:     "Repo prefix",
-    intern_model:    "Model",
-    intern_model_val:"Self-directed, remote",
-    intern_cert:     "Certificate",
+    nav_internship: "05 — Internship",
+    intern_h2: "Future Interns<br /><span class=\"accent\">Full Stack Web Dev</span>",
+    intern_track: "Track",
+    intern_repo: "Repo prefix",
+    intern_model: "Model",
+    intern_model_val: "Self-directed, remote",
+    intern_cert: "Certificate",
     intern_cert_val: "2 tasks min · LoR at 3",
-    task_done:       "✓ Done",
-    task_wip:        "◌ In progress",
-    task_todo:       "○ To do",
-    task_deliverable:"Deliverable →",
-    task_skills:     "Skills →",
-    task1_title:     "Personal Portfolio Website",
-    task1_desc:      "Build a personal portfolio to showcase skills, projects and professional profile. Interactive resume sections, contact form with email notifications, SEO-friendly structure.",
-    task2_title:     "Client Lead Management System",
-    task2_desc:      "Mini CRM to manage client leads from contact forms. Lead listing (name, email, source, status), status updates (new / contacted / converted), notes per lead, secure admin access.",
-    task2_skills:    "CRUD, backend integration, database management, business workflows",
-    task3_title:     "Local Business Website & Live Pitch",
-    task3_desc:      "Build a professional website for a real local business (restaurant, café, gym, salon…) and pitch it to the owner as a live project.",
-    task3_skills:    "Real-world dev, client communication, pitching, business problem solving",
-    roadmap_title:   "Program Roadmap",
-    rm_offer:        "Offer Letter received",
-    rm_tasks:        "Skill & Task Phase",
-    rm_submit:       "Project Submission & Review",
-    rm_cert:         "Certification & Career Access",
-    rm_complete:     "Program Completion & Verification",
+    task_done: "✓ Done",
+    task_wip: "◌ In progress",
+    task_todo: "○ To do",
+    task_deliverable: "Deliverable →",
+    task_skills: "Skills →",
+    task1_title: "Personal Portfolio Website",
+    task1_desc: "Build a personal portfolio to showcase skills, projects and professional profile. Interactive resume sections, contact form with email notifications, SEO-friendly structure.",
+    task2_title: "Client Lead Management System",
+    task2_desc: "Mini CRM to manage client leads from contact forms. Lead listing (name, email, source, status), status updates (new / contacted / converted), notes per lead, secure admin access.",
+    task2_skills: "CRUD, backend integration, database management, business workflows",
+    task3_title: "Local Business Website & Live Pitch",
+    task3_desc: "Build a professional website for a real local business (restaurant, café, gym, salon…) and pitch it to the owner as a live project.",
+    task3_skills: "Real-world dev, client communication, pitching, business problem solving",
+    roadmap_title: "Program Roadmap",
+    rm_offer: "Offer Letter received",
+    rm_tasks: "Skill & Task Phase",
+    rm_submit: "Project Submission & Review",
+    rm_cert: "Certification & Career Access",
+    rm_complete: "Program Completion & Verification",
 
-    nav_exp:          "04 — Experience",
-    nav_internship:   "05 — Internship",
-    nav_contact:      "06 — Contact",
-    exp_h2:           "Professional <span class=\"accent\">Experience</span>",
-    exp_fi_date:      "29 Jun-2026 - 29 Jul-2026",
-    exp_fi_title:     "Full Stack Web Developer Intern",
-    exp_fi_company:   "Future Interns",
-    exp_fi_type:      "Remote · Internship",
-    exp_fi_desc:      "Self-directed internship building and shipping real full-stack web projects. Developing a personal portfolio, a client lead management CRM, and a local business website. Working with HTML/CSS/JS, React, Node.js, MongoDB and modern deployment pipelines.",
-    exp_sec_date:     "Fev-2026",
-    exp_sec_title:    "SECOPS Professionalization Project",
-    exp_sec_type:     "Academic · Group Lead",
-    exp_sec_desc:     "Led a team of 6 on a systems administration project implementing OpenLDAP and Samba under Linux. Produced full technical documentation including architecture diagrams, FCFA budget, and an administration guide with terminal outputs.",
-    exp_cisco_date:   "Dec-2024",
-    exp_cisco_title:  "IT Hardware Essentials",
-    exp_cisco_type:   "Certification",
-    exp_cisco_desc:   "Completed the CISCO IT Hardware Essentials certification covering computer components, hardware diagnostics, OS installation, and basic network configuration.",
+    nav_exp: "04 — Experience",
+    nav_internship: "05 — Internship",
+    nav_contact: "06 — Contact",
+    exp_h2: "Professional <span class=\"accent\">Experience</span>",
+    exp_fi_date: "29 Jun-2026 - 29 Jul-2026",
+    exp_fi_title: "Full Stack Web Developer Intern",
+    exp_fi_company: "Future Interns",
+    exp_fi_type: "Remote · Internship",
+    exp_fi_desc: "Self-directed internship building and shipping real full-stack web projects. Developing a personal portfolio, a client lead management CRM, and a local business website. Working with HTML/CSS/JS, React, Node.js, MongoDB and modern deployment pipelines.",
+    exp_sec_date: "Fev-2026",
+    exp_sec_title: "SECOPS Professionalization Project",
+    exp_sec_type: "Academic · Group Lead",
+    exp_sec_desc: "Led a team of 6 on a systems administration project implementing OpenLDAP and Samba under Linux. Produced full technical documentation including architecture diagrams, FCFA budget, and an administration guide with terminal outputs.",
+    exp_cisco_date: "Dec-2024",
+    exp_cisco_title: "IT Hardware Essentials",
+    exp_cisco_type: "Certification",
+    exp_cisco_desc: "Completed the CISCO IT Hardware Essentials certification covering computer components, hardware diagnostics, OS installation, and basic network configuration.",
+    /* Oasis Infobyte — Experience */
+    exp_oasis_date: "2026 — Present",
+    exp_oasis_title: "Web Development & Design Intern",
+    exp_oasis_type: "Remote · SIP Internship",
+    exp_oasis_desc: "Self-directed internship completing Level 2 of the Web Development & Designing track. Building 4 projects — a calculator, a tribute page, a to-do app, and a login authentication system — using HTML, CSS, Vanilla JavaScript and Node.js.",
+
+    /* Oasis Infobyte — Internship section */
+    oasis_h2: "Web Development <span class=\"accent\">&amp; Design</span>",
+    oasis_t1_title: "Calculator — PaperCalc",
+    oasis_t1_desc: "Browser calculator with graph paper theme, red ink result highlight, full arithmetic, operator chaining, CSS Grid layout.",
+    oasis_t2_title: "Tribute Page — Hayao Miyazaki",
+    oasis_t2_desc: "Ghibli-inspired tribute page — biography, timeline, quote block, sky/wind/clouds aesthetic, fully responsive.",
+    oasis_t3_title: "To-Do App — Flow",
+    oasis_t3_desc: "Pastel productivity app — pending/completed lists, inline edit, timestamps, task counters, localStorage persistence.",
+    oasis_t4_title: "Login Authentication System",
+    oasis_t4_desc: "Full-stack auth system — registration, login validation, protected dashboard, bcrypt password hashing, JWT session management.",
+
+    /* Projects */
+    proj_papercalc: "Browser-based calculator with a graph paper aesthetic — results circled in red ink. Full arithmetic operations, division-by-zero handling, operator chaining, CSS Grid layout. Built for Oasis Infobyte SIP L2-T1.",
+    proj_miyazaki: "Tribute page dedicated to Hayao Miyazaki with a Studio Ghibli-inspired aesthetic — sky, wind, clouds. Biography, timeline, quote block, responsive layout. Built for Oasis Infobyte SIP L2-T2.",
+    proj_flow: "Pastel productivity to-do app with pending/completed lists, inline edit, timestamps, task counters and localStorage persistence. Inspired by Notion/Todoist. Built for Oasis Infobyte SIP L2-T3.",
+    proj_fs01: "Personal portfolio with Forest + Indigo identity, EN/FR switcher, 6 custom animations, internship tracker and CV download. Future Interns Full Stack Track — Task 1.",
+    proj_fs02: "Client lead management system — React frontend, Express/PostgreSQL backend, JWT auth, CRUD pipeline, notes per lead. Future Interns Full Stack Track — Task 2.",
+    proj_fs03: "Professional website for a real local laundry business in Lomé. WhatsApp quote estimator, pickup scheduler, live order tracking, interactive price list. Future Interns Full Stack Track — Task 3.",
   },
 
   fr: {
     /* Navigation */
-    nav_about:    "01 — À propos",
-    nav_skills:   "02 — Compétences",
+    nav_about: "01 — À propos",
+    nav_skills: "02 — Compétences",
     nav_projects: "03 — Projets",
-    nav_contact:  "04 — Contact",
+    nav_contact: "04 — Contact",
 
     /* CV */
-    cv_btn:         "CV",
-    cv_btn_mobile:  "↓ Télécharger le CV",
-    cv_btn_about:   "↓ Télécharger le CV",
+    cv_btn: "CV",
+    cv_btn_mobile: "↓ Télécharger le CV",
+    cv_btn_about: "↓ Télécharger le CV",
     cv_btn_contact: "Télécharger le CV (PDF)",
 
     /* Hero */
     hero_eyebrow: "Folio — Index 01 / Lomé, TG",
-    hero_title:   "Développeur Full Stack &amp; Mobile",
-    hero_sub:     "Je construis des produits web et mobile — apps Flutter, APIs Node.js, interfaces React — avec une architecture propre et le soin des détails qui font la différence.",
-    hero_cta1:    "Voir mes projets",
-    hero_cta_cv:  "↓ Télécharger le CV",
-    scroll_hint:  "défiler ↓",
+    hero_title: "Développeur Full Stack &amp; Mobile",
+    hero_sub: "Je construis des produits web et mobile — apps Flutter, APIs Node.js, interfaces React — avec une architecture propre et le soin des détails qui font la différence.",
+    hero_cta1: "Voir mes projets",
+    hero_cta_cv: "↓ Télécharger le CV",
+    scroll_hint: "défiler ↓",
 
     /* Stats */
     stat_projects: "Projets livrés",
-    stat_live:     "Déploiements live",
-    stat_years:    "Ans d'apprentissage",
+    stat_live: "Déploiements live",
+    stat_years: "Ans d'apprentissage",
 
     /* About text */
     about_h2: "Coder avec intention,<br /><span class=\"accent\">livrer avec soin.</span>",
@@ -175,108 +199,132 @@ const i18n = {
     about_portfolio: "LinkedIn",
 
     /* Timeline */
-    tl_esig:   "Licence Dév. d'Applications — ESIG Global Success (en cours)",
-    tl_bac:    "Baccalauréat — Lycée Lomé-cité",
+    tl_esig: "Licence Dév. d'Applications — ESIG Global Success (en cours)",
+    tl_bac: "Baccalauréat — Lycée Lomé-cité",
     tl_probat: "PROBAT",
-    tl_bepc:   "BEPC",
+    tl_bepc: "BEPC",
 
     /* About card */
-    card_role_label:     "rôle",
-    card_role_value:     "Stagiaire Dev @ Future Interns",
-    card_school_label:   "école",
-    card_degree_label:   "diplôme",
-    card_degree_value:   "Licence — Dév. d'Applications",
+    card_role_label: "rôle",
+    card_role_value: "Stagiaire Dev @ Future Interns",
+    card_school_label: "école",
+    card_degree_label: "diplôme",
+    card_degree_value: "Licence — Dév. d'Applications",
     card_location_label: "localisation",
-    card_cert_label:     "certif",
-    card_cert_value:     "CISCO — Matériels Informatiques",
-    card_status_label:   "statut",
-    card_status_value:   "Disponible pour un stage",
+    card_cert_label: "certif",
+    card_cert_value: "CISCO — Matériels Informatiques",
+    card_status_label: "statut",
+    card_status_value: "Disponible pour un stage",
 
     /* Skills */
-    skills_h2:    "Mes outils de travail",
-    sk_mobile:    "Mobile",
+    skills_h2: "Mes outils de travail",
+    sk_mobile: "Mobile",
     sk_languages: "Langages",
-    sk_frontend:  "Frontend",
-    sk_backend:   "Backend",
-    sk_db:        "Bases de données",
-    sk_devops:    "DevOps &amp; Systèmes",
-    sk_concepts:  "Concepts",
+    sk_frontend: "Frontend",
+    sk_backend: "Backend",
+    sk_db: "Bases de données",
+    sk_devops: "DevOps &amp; Systèmes",
+    sk_concepts: "Concepts",
 
     /* Projects */
-    proj_h2:           "Travaux sélectionnés",
-    proj_type_mobile:  "App Mobile",
-    proj_type_web:     "App Web",
+    proj_h2: "Travaux sélectionnés",
+    proj_type_mobile: "App Mobile",
+    proj_type_web: "App Web",
     proj_type_landing: "Page d'accueil",
-    proj_live:         "En ligne",
-    proj_wip:          "En cours",
+    proj_live: "En ligne",
+    proj_wip: "En cours",
     proj_dinease: "App mobile de découverte de restaurants à Lomé — filtrage par budget et proximité. Parcours en 4 écrans : Accueil → Budget → Résultats → Détail restaurant. Flutter/Dart, Firebase, Android Studio + VS Code.",
-    proj_gym:     "Application web de gestion d'un club de gym — rôle front-end. Maquetté sur Figma puis développé en HTML/CSS/JS. Mise en page responsive, scroll fluide, UI soignée.",
-    proj_budget:  "Gestionnaire de finances personnelles — règle 50/30/20, Chart.js, localStorage, UI fintech.",
+    proj_gym: "Application web de gestion d'un club de gym — rôle front-end. Maquetté sur Figma puis développé en HTML/CSS/JS. Mise en page responsive, scroll fluide, UI soignée.",
+    proj_budget: "Gestionnaire de finances personnelles — règle 50/30/20, Chart.js, localStorage, UI fintech.",
     proj_weather: "App météo avec géolocalisation, API OpenWeatherMap et thèmes CSS dynamiques selon les conditions.",
-    proj_ecole:   "École de conduite en ligne — frontend React, backend Express/MongoDB, auth JWT, quiz, réservations, panel admin.",
-    link_live:    "Voir ↗",
-    link_github:  "GitHub ↗",
+    proj_ecole: "École de conduite en ligne — frontend React, backend Express/MongoDB, auth JWT, quiz, réservations, panel admin.",
+    link_live: "Voir ↗",
+    link_github: "GitHub ↗",
 
     /* Contact */
-    contact_h2:        "Construisons<br /><span class=\"accent\">quelque chose ensemble.</span>",
-    contact_sub:       "Disponible pour stages, projets freelance et collaborations. Je réponds en moins de 24h.",
+    contact_h2: "Construisons<br /><span class=\"accent\">quelque chose ensemble.</span>",
+    contact_sub: "Disponible pour stages, projets freelance et collaborations. Je réponds en moins de 24h.",
     contact_portfolio: "Portfolio",
-    form_name:         "Nom",
-    form_email:        "Email",
-    form_message:      "Message",
-    form_send:         "Envoyer",
-    form_ph_name:      "Votre nom",
-    form_ph_email:     "votre@email.com",
-    form_ph_msg:       "Parlez-moi de votre projet...",
-    form_sending:      "Envoi en cours...",
-    form_success:      "Message envoyé — je réponds en moins de 24h.",
-    form_error:        "Une erreur est survenue — contactez-moi via GitHub.",
+    form_name: "Nom",
+    form_email: "Email",
+    form_message: "Message",
+    form_send: "Envoyer",
+    form_ph_name: "Votre nom",
+    form_ph_email: "votre@email.com",
+    form_ph_msg: "Parlez-moi de votre projet...",
+    form_sending: "Envoi en cours...",
+    form_success: "Message envoyé — je réponds en moins de 24h.",
+    form_error: "Une erreur est survenue — contactez-moi via GitHub.",
     /* Section stage */
-    nav_internship:  "05 — Stage",
-    intern_h2:       "Future Interns<br /><span class=\"accent\">Full Stack Web Dev</span>",
-    intern_track:    "Track",
-    intern_repo:     "Préfixe repo",
-    intern_model:    "Modèle",
-    intern_model_val:"Autonome, à distance",
-    intern_cert:     "Certificat",
+    nav_internship: "05 — Stage",
+    intern_h2: "Future Interns<br /><span class=\"accent\">Full Stack Web Dev</span>",
+    intern_track: "Track",
+    intern_repo: "Préfixe repo",
+    intern_model: "Modèle",
+    intern_model_val: "Autonome, à distance",
+    intern_cert: "Certificat",
     intern_cert_val: "2 tâches min · LoR à 3",
-    task_done:       "✓ Terminé",
-    task_wip:        "◌ En cours",
-    task_todo:       "○ À faire",
-    task_deliverable:"Livrable →",
-    task_skills:     "Compétences →",
-    task1_title:     "Site Portfolio Personnel",
-    task1_desc:      "Construire un portfolio personnel pour présenter compétences, projets et profil. Sections CV interactives, formulaire de contact avec notifications email, structure SEO-friendly.",
-    task2_title:     "Système de Gestion de Leads (Mini CRM)",
-    task2_desc:      "Mini CRM pour gérer les leads clients issus des formulaires de contact. Listing des leads, mises à jour de statut (nouveau / contacté / converti), notes par lead, accès admin sécurisé.",
-    task2_skills:    "CRUD, intégration backend, gestion de base de données, workflows métier",
-    task3_title:     "Site Entreprise Locale & Pitch Live",
-    task3_desc:      "Créer un site professionnel pour une vraie entreprise locale (restaurant, café, salle de sport…) et le pitcher au propriétaire comme projet réel.",
-    task3_skills:    "Développement réel, communication client, pitch, résolution de problèmes métier",
-    roadmap_title:   "Roadmap du Programme",
-    rm_offer:        "Lettre d'offre reçue",
-    rm_tasks:        "Phase Compétences & Tâches",
-    rm_submit:       "Soumission & Révision des Projets",
-    rm_cert:         "Certification & Accès Carrière",
-    rm_complete:     "Clôture & Vérification du Programme",
+    task_done: "✓ Terminé",
+    task_wip: "◌ En cours",
+    task_todo: "○ À faire",
+    task_deliverable: "Livrable →",
+    task_skills: "Compétences →",
+    task1_title: "Site Portfolio Personnel",
+    task1_desc: "Construire un portfolio personnel pour présenter compétences, projets et profil. Sections CV interactives, formulaire de contact avec notifications email, structure SEO-friendly.",
+    task2_title: "Système de Gestion de Leads (Mini CRM)",
+    task2_desc: "Mini CRM pour gérer les leads clients issus des formulaires de contact. Listing des leads, mises à jour de statut (nouveau / contacté / converti), notes par lead, accès admin sécurisé.",
+    task2_skills: "CRUD, intégration backend, gestion de base de données, workflows métier",
+    task3_title: "Site Entreprise Locale & Pitch Live",
+    task3_desc: "Créer un site professionnel pour une vraie entreprise locale (restaurant, café, salle de sport…) et le pitcher au propriétaire comme projet réel.",
+    task3_skills: "Développement réel, communication client, pitch, résolution de problèmes métier",
+    roadmap_title: "Roadmap du Programme",
+    rm_offer: "Lettre d'offre reçue",
+    rm_tasks: "Phase Compétences & Tâches",
+    rm_submit: "Soumission & Révision des Projets",
+    rm_cert: "Certification & Accès Carrière",
+    rm_complete: "Clôture & Vérification du Programme",
 
-    nav_exp:          "04 — Expérience",
-    nav_internship:   "05 — Stage",
-    nav_contact:      "06 — Contact",
-    exp_h2:           "Expérience <span class=\"accent\">Professionnelle</span>",
-    exp_fi_date:      "29 Jun-2026 - 29 Jul-2026",
-    exp_fi_title:     "Stagiaire Développeur Full Stack",
-    exp_fi_company:   "Future Interns",
-    exp_fi_type:      "À distance · Stage",
-    exp_fi_desc:      "Stage autonome axé sur la conception et le déploiement de projets web full-stack réels. Développement d'un portfolio personnel, d'un CRM de gestion de leads et d'un site d'entreprise locale. Technologies : HTML/CSS/JS, React, Node.js, MongoDB, Netlify, GitHub.",
-    exp_sec_date:     "Fev-2026",
-    exp_sec_title:    "Projet SECOPS — Semaine de professionnalisation",
-    exp_sec_type:     "Académique · Chef de groupe",
-    exp_sec_desc:     "Direction d'un groupe de 6 étudiants sur un projet d'administration systèmes : implémentation d'OpenLDAP et Samba sous Linux. Production de la documentation complète : schémas d'architecture, budget en FCFA, guide d'administration avec sorties terminal.",
-    exp_cisco_date:   "Dec-2024",
-    exp_cisco_title:  "IT Hardware Essentials",
-    exp_cisco_type:   "Certification",
-    exp_cisco_desc:   "Certification CISCO couvrant les composants matériels d'un ordinateur, le diagnostic hardware, l'installation d'OS et la configuration réseau de base.",
+    nav_exp: "04 — Expérience",
+    nav_internship: "05 — Stage",
+    nav_contact: "06 — Contact",
+    exp_h2: "Expérience <span class=\"accent\">Professionnelle</span>",
+    exp_fi_date: "29 Jun-2026 - 29 Jul-2026",
+    exp_fi_title: "Stagiaire Développeur Full Stack",
+    exp_fi_company: "Future Interns",
+    exp_fi_type: "À distance · Stage",
+    exp_fi_desc: "Stage autonome axé sur la conception et le déploiement de projets web full-stack réels. Développement d'un portfolio personnel, d'un CRM de gestion de leads et d'un site d'entreprise locale. Technologies : HTML/CSS/JS, React, Node.js, MongoDB, Netlify, GitHub.",
+    exp_sec_date: "Fev-2026",
+    exp_sec_title: "Projet SECOPS — Semaine de professionnalisation",
+    exp_sec_type: "Académique · Chef de groupe",
+    exp_sec_desc: "Direction d'un groupe de 6 étudiants sur un projet d'administration systèmes : implémentation d'OpenLDAP et Samba sous Linux. Production de la documentation complète : schémas d'architecture, budget en FCFA, guide d'administration avec sorties terminal.",
+    exp_cisco_date: "Dec-2024",
+    exp_cisco_title: "IT Hardware Essentials",
+    exp_cisco_type: "Certification",
+    exp_cisco_desc: "Certification CISCO couvrant les composants matériels d'un ordinateur, le diagnostic hardware, l'installation d'OS et la configuration réseau de base.",
+    /* Oasis Infobyte — Experience */
+    exp_oasis_date: "2026 — Présent",
+    exp_oasis_title: "Stagiaire Développement Web & Design",
+    exp_oasis_type: "À distance · Stage SIP",
+    exp_oasis_desc: "Stage autonome sur le niveau 2 de la piste Web Development & Designing. Réalisation de 4 projets — une calculatrice, une page hommage, une app to-do et un système d'authentification — en HTML, CSS, Vanilla JS et Node.js.",
+
+    /* Oasis Infobyte — Section stage */
+    oasis_h2: "Développement Web <span class=\"accent\">&amp; Design</span>",
+    oasis_t1_title: "Calculatrice — PaperCalc",
+    oasis_t1_desc: "Calculatrice avec thème cahier millimétré, résultat encerclé au stylo rouge, opérations complètes, chaînage d'opérateurs, layout CSS Grid.",
+    oasis_t2_title: "Page Hommage — Hayao Miyazaki",
+    oasis_t2_desc: "Page hommage thème Ghibli — biographie, timeline, bloc citation, esthétique ciel/vent/nuages, responsive.",
+    oasis_t3_title: "App To-Do — Flow",
+    oasis_t3_desc: "App de productivité pastel — listes en attente/terminées, édition inline, horodatage, compteurs, persistance localStorage.",
+    oasis_t4_title: "Système d'Authentification",
+    oasis_t4_desc: "Auth full-stack — inscription, validation login, dashboard protégé, hachage bcrypt, gestion de session JWT.",
+
+    /* Projets */
+    proj_papercalc: "Calculatrice web avec esthétique cahier millimétré — résultats encerclés à l'encre rouge. Opérations arithmétiques complètes, gestion division par zéro, chaînage d'opérateurs, CSS Grid. Projet Oasis Infobyte SIP L2-T1.",
+    proj_miyazaki: "Page hommage à Hayao Miyazaki avec esthétique Studio Ghibli — ciel, vent, nuages. Biographie, frise chronologique, bloc citation, responsive. Projet Oasis Infobyte SIP L2-T2.",
+    proj_flow: "App to-do productivité pastel — listes en attente/terminées, édition inline, horodatage, compteurs et persistance localStorage. Inspiré de Notion/Todoist. Projet Oasis Infobyte SIP L2-T3.",
+    proj_fs01: "Portfolio personnel avec identité Forest + Indigo, switcher EN/FR, 6 animations custom, tracker de stage et téléchargement CV. Future Interns Full Stack Track — Tâche 1.",
+    proj_fs02: "Système de gestion de leads clients — frontend React, backend Express/PostgreSQL, auth JWT, pipeline CRUD, notes par lead. Future Interns Full Stack Track — Tâche 2.",
+    proj_fs03: "Site professionnel pour un vrai pressing local à Lomé. Estimateur de devis WhatsApp, planificateur de collecte, suivi de commande en temps réel, liste de tarifs interactive. Future Interns Full Stack Track — Tâche 3.",
   },
 };
 
@@ -323,8 +371,8 @@ document.getElementById("langToggle").addEventListener("click", () => {
    Le nom ne change pas selon la langue — pas dans i18n.
 ========================================================================= */
 const heroName = "Koffi Israël Alove";
-const nameEl   = document.getElementById("typed-name");
-let charIndex  = 0;
+const nameEl = document.getElementById("typed-name");
+let charIndex = 0;
 
 function typeName() {
   if (charIndex <= heroName.length) {
@@ -362,7 +410,7 @@ sections.forEach((s) =>
 /* =========================================================================
    BURGER — menu mobile
 ========================================================================= */
-const burger     = document.getElementById("burger");
+const burger = document.getElementById("burger");
 const mobileMenu = document.getElementById("mobileMenu");
 burger.addEventListener("click", () => mobileMenu.classList.toggle("open"));
 mobileMenu.querySelectorAll("a").forEach((link) =>
@@ -387,14 +435,14 @@ document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el))
    Setup : web3forms.com → récupère ta clé → remplace "YOUR_WEB3FORMS_KEY".
    Feedback affiché dans la langue active.
 ========================================================================= */
-const form      = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
 const submitBtn = document.getElementById("submitBtn");
-const formNote  = document.getElementById("formNote");
+const formNote = document.getElementById("formNote");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const name    = document.getElementById("name").value.trim();
-  const email   = document.getElementById("email").value.trim();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
   if (!name || !email || !message) return;
 
@@ -417,12 +465,12 @@ form.addEventListener("submit", async (e) => {
     const data = await res.json();
     if (data.success) {
       formNote.textContent = t.form_success;
-      formNote.className   = "form-note mono success";
+      formNote.className = "form-note mono success";
       form.reset();
     } else { throw new Error(); }
   } catch {
     formNote.textContent = t.form_error;
-    formNote.className   = "form-note mono error";
+    formNote.className = "form-note mono error";
   } finally {
     submitBtn.querySelector("[data-i18n]").textContent = t.form_send;
     submitBtn.disabled = false;
@@ -435,11 +483,11 @@ form.addEventListener("submit", async (e) => {
    ~40 points indigo qui dérivent lentement en fond du hero.
 ========================================================= */
 const canvas = document.getElementById("heroCanvas");
-const ctx    = canvas.getContext("2d");
+const ctx = canvas.getContext("2d");
 let particles = [];
 
 function resizeCanvas() {
-  canvas.width  = canvas.offsetWidth;
+  canvas.width = canvas.offsetWidth;
   canvas.height = canvas.offsetHeight;
 }
 resizeCanvas();
@@ -447,12 +495,12 @@ window.addEventListener("resize", () => { resizeCanvas(); initParticles(); });
 
 function initParticles() {
   particles = Array.from({ length: 42 }, () => ({
-    x:  Math.random() * canvas.width,
-    y:  Math.random() * canvas.height,
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
     vx: (Math.random() - 0.5) * 0.35,
     vy: (Math.random() - 0.5) * 0.35,
-    r:  Math.random() * 1.8 + 0.6,
-    o:  Math.random() * 0.18 + 0.06,
+    r: Math.random() * 1.8 + 0.6,
+    o: Math.random() * 0.18 + 0.06,
   }));
 }
 initParticles();
@@ -463,7 +511,7 @@ function animateParticles() {
     p.x += p.vx;
     p.y += p.vy;
     // Rebond sur les bords
-    if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+    if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
     if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
@@ -479,10 +527,10 @@ animateParticles();
    Partent de 0 et montent jusqu'à data-count en 800ms.
 ========================================================= */
 function animateCounter(el) {
-  const target   = parseInt(el.dataset.count);
-  const suffix   = el.textContent.replace(/[0-9]/g, ""); // garde "+" ou ""
+  const target = parseInt(el.dataset.count);
+  const suffix = el.textContent.replace(/[0-9]/g, ""); // garde "+" ou ""
   const duration = 800;
-  const start    = performance.now();
+  const start = performance.now();
 
   function update(now) {
     const progress = Math.min((now - start) / duration, 1);
@@ -513,13 +561,13 @@ if (statsEl) statsObserver.observe(statsEl);
 ========================================================= */
 document.querySelectorAll(".project-card").forEach(card => {
   card.addEventListener("mousemove", e => {
-    const rect   = card.getBoundingClientRect();
-    const cx     = rect.left + rect.width  / 2;
-    const cy     = rect.top  + rect.height / 2;
-    const dx     = (e.clientX - cx) / (rect.width  / 2);
-    const dy     = (e.clientY - cy) / (rect.height / 2);
-    const rotX   = -dy * 8; // max 8°
-    const rotY   =  dx * 8;
+    const rect = card.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    const dx = (e.clientX - cx) / (rect.width / 2);
+    const dy = (e.clientY - cy) / (rect.height / 2);
+    const rotX = -dy * 8; // max 8°
+    const rotY = dx * 8;
     card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-3px)`;
   });
   card.addEventListener("mouseleave", () => {
@@ -552,7 +600,7 @@ if (skillsSection) {
 const heroPath = document.querySelector(".hero-line path");
 if (heroPath) {
   const len = heroPath.getTotalLength();
-  heroPath.style.strokeDasharray  = len;
+  heroPath.style.strokeDasharray = len;
   heroPath.style.strokeDashoffset = len;
 }
 
@@ -569,7 +617,7 @@ if (navList) {
   function moveIndicator(link) {
     const listRect = navList.getBoundingClientRect();
     const linkRect = link.getBoundingClientRect();
-    indicator.style.left  = (linkRect.left - listRect.left) + "px";
+    indicator.style.left = (linkRect.left - listRect.left) + "px";
     indicator.style.width = linkRect.width + "px";
   }
 
@@ -577,7 +625,7 @@ if (navList) {
   const navObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
-      const id   = entry.target.id;
+      const id = entry.target.id;
       const link = document.querySelector(`.nav-links a[href="#${id}"]`);
       if (link) moveIndicator(link);
     });
